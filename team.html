@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team - BU internetCafe</title>
+    <style>
+        /* Basic Reset and Variables */
+        :root {
+            --cafe-blue: #007bff; /* Primary color, like a strong electric blue */
+            --dark-text: #333;
+            --light-bg: #f4f4f9;
+            --card-bg: #ffffff;
+            --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--cafe-blue);
+            color: white;
+        }
+
+        .header h1 {
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* Team Container */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px; /* Space between cards */
+        }
+
+        /* Team Member Card */
+        .team-member {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Default to full width on small screens */
+            max-width: 300px; /* Max width for a neat card on larger screens */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Placeholder for Member Photo */
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em; /* Icon size */
+            color: #aaa;
+            overflow: hidden; /* To handle actual image later */
+        }
+        
+        /* If using actual images, use this instead of the 'font-size' and 'color' above */
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px;
+            color: var(--cafe-blue);
+            font-size: 1.5em;
+        }
+
+        .team-member p {
+            margin: 0;
+            font-weight: 600;
+            color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .team-member {
+                width: calc(33% - 30px); /* 3 cards per row, adjusting for gap */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .team-member {
+                width: calc(25% - 30px); /* 4 cards per row, adjusting for gap */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Meet Our Crew!</h1>
+        <p>The dedicated team making your gaming and browsing experience awesome.</p>
+    </header>
+    
+    <div class="team-container">
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/godwin.jpg" alt="Photo of Godwin">
+            </div> 
+            <h3>Kalemera Godwin</h3>
+            <p>Founder & Lead Manager</p>
+            <small>The brains behind the bytes, ensuring smooth operations.</small>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/monganza.jpg" alt="Photo of Alex Johnson">
+            </div>
+            <h3>Monganza Molumbani</h3>
+            <p>Lead Tech Support</p>
+            <small>Keeps all our PCs running at peak performance.</small>
+        </div>
+        
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/hadijjah.jpg" alt="Photo of Alex Johnson">
+            </div>
+            <h3>Namuddo Hadijjah</h3>
+            <p>Cafe Operations & Barista</p>
+            <small>Your friendly face for check-ins, snacks, and great coffee.</small>
+        </div>
+        
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/peter.jpg" alt="Photo of Alex Johnson">
+            </div>
+            <h3>Katimbo Biyinzika Peter</h3>
+            <p>Events Coordinator</p>
+            <small>Organizes all tournaments and special community events.</small>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/gladness.jpg" alt="Photo of Alex Johnson">
+            </div>
+            <h3>Gladness Edson Hadikiny</h3>
+            <p>Lead Tech Support</p>
+            <small>Keeps all our PCs running at peak performance.</small>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/haji.jpg" alt="Photo of Alex Johnson">
+            </div>
+            <h3>Shakira Haji Mohamed </h3>
+            <p>Lead Tech Support</p>
+            <small>Keeps all our PCs running at peak performance.</small>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="images/kuir.jpg" alt="Photo of Alex Johnson">
+            </div>
+            <h3>Dhieu Thuch Kuir</h3>
+            <p>Lead Tech Support</p>
+            <small>Keeps all our PCs running at peak performance.</small>
+        </div>
+
+        </div>
+
+</body>
+</html>
